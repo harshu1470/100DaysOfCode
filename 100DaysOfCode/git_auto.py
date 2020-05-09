@@ -19,30 +19,29 @@ def push_git():
 	discription = input("enter your commit message")
 	print(sp.getoutput('git commit -m ' + discription))
 	print(sp.getoutput('git push origin master'))
-if num == '1':
-	print(sp.getoutput('git add .'))
+while True:
+	if num == '1':
+		print(sp.getoutput('git add .'))
 
-elif num == '2':
-	print(sp.getoutput('git status'))
-elif num == '3':
-	discription = input("enter your commit message")
-	print(sp.getoutput('git commit -m '+ discription))
-	print(sp.getoutput('git log -p -2'))
-elif num == '4':
-	print(sp.getoutput('git log')) 
-elif num == '5':
-	print(sp.getoutput('git push origin master'))	
+	elif num == '2':
+		print(sp.getoutput('git status'))
+	elif num == '3':
+		discription = input("enter your commit message")
+		print(sp.getoutput('git commit -m '+ discription))
+		print(sp.getoutput('git log -p -2'))
+	elif num == '4':
+		print(sp.getoutput('git log')) 
+	elif num == '5':
+		print(sp.getoutput('git push origin master'))	
 
-elif num == '6':
-	branch_name = input("enter you branch name to checkout")
-	print(sp.getoutput('git checkout ' + branch_name ))
-	print(sp.getouput('git push origin ' + branch_name))
-elif num == '7':
-	file_name =input("enter your file name")
-	print(sp.getoutput('git add ' + file_name))
+	elif num == '6':
+		branch_name = input("enter you branch name to checkout")
+		print(sp.getoutput('git checkout ' + branch_name ))
+		print(sp.getouput('git push origin ' + branch_name))
+	elif num == '7':
+		file_name =input("enter your file name")
+		print(sp.getoutput('git add ' + file_name))
 
-elif num == "8":
-	push_git()
-else:
-	print("choose right number")	
+	elif num == "8":
+		push_git()
 
