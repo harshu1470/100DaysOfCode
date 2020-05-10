@@ -44,6 +44,7 @@ while True:
 
 	elif num == "8":
 		push_git()
+		break
 
 
 
